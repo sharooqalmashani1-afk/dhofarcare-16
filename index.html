@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DhofarCare — خدمات منزلية في ظفار</title>
+  <meta name="description" content="منصة ذكية لحجز الخدمات المنزلية في ظفار، مع دعم على مدار الساعة."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="DhofarCare" class="logo"/>
+      <span class="brand-name">DhofarCare</span>
+    </div>
+    <nav class="nav">
+      <a href="#book">احجز</a>
+      <a href="#services">الخدمات</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+    <a class="cta" href="#book">احجز الآن</a>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <h1>خدمات منزلية ذكية في <span class="highlight">ظفار</span></h1>
+      <p>احجز عمال نظافة وصيانة وخدمات منزلية أخرى من مزوّدين موثوقين بالقرب منك مع دعم متواصل.</p>
+      <ul class="ticks">
+        <li>✅ مزوّدون محليون موثّقون</li>
+        <li>✅ نطاق أسعار واضح</li>
+        <li>✅ حجز سريع وتأكيد فوري</li>
+      </ul>
+      <div class="hero-actions">
+        <a href="#book" class="btn primary">ابدأ الحجز</a>
+        <a href="#services" class="btn ghost">استكشف الخدمات</a>
+      </div>
+      <div class="auto-reply">
+        <strong>الردّ الآلي (24/7):</strong>
+        مرحبًا! 👋 الخدمة متوفرة <span class="hours"></span>. ما الخدمة المطلوبة؟
+        الأسعار تتراوح بحسب النوع والمدة. للتواصل السريع واتساب <span class="phone"></span> أو بريد <span class="email"></span>.
+        لأي استفسار طارئ الرجاء الاتصال على الخط الساخن أو مراسلة DhofarCare عبر البريد.
+      </div>
+    </div>
+    <div class="hero-media">
+      <video class="side-video" src="assets/hero-video.mp4" autoplay muted loop playsinline></video>
+      <img class="fallback" src="assets/platform-3d.png" alt="DhofarCare concept"/>
+    </div>
+  </section>
+
+  <section class="banner">
+    <p>نطاق الخدمة: <span class="area"></span> • الدعم: <span class="email"></span></p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>أكثر الخدمات طلبًا</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="تنظيف المنازل">
+        <h3>تنظيف المنازل ✨</h3>
+        <p>تنظيف عادي/عميق، المطابخ والحمامات، آمن على الأطفال والحيوانات.</p>
+      </article>
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="صيانة">
+        <h3>صيانة 🛠️</h3>
+        <p>تشييك المكيفات والسباكة والكهرباء وتجميع الأثاث والمزيد.</p>
+      </article>
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="تجميل منزلي">
+        <h3>تجميل منزلي 💅</h3>
+        <p>جلسات صالون منزلية مع مختصات معتمدات — راحة وخصوصية.</p>
+      </article>
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="خدمات خاصة">
+        <h3>خدمات خاصة 🧼</h3>
+        <p>غسيل الكنب والسجاد، تنظيف ما بعد المناسبات، الانتقال، وغيرها.</p>
+      </article>
+    </div>
+    <div class="center mt">
+      <a href="#book" class="btn primary">احجز خلال 60 ثانية</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div>
+        <h2>من نحن</h2>
+        <p>DhofarCare منصة محلية تربط منازل ظفار بمزوّدين موثوقين، وتمكّن روّاد الأعمال والأسر المنتجة. نلتزم بالتحول الرقمي وتمكين الـSMEs بما ينسجم مع رؤية عُمان 2040.</p>
+        <ul class="emoji-list">
+          <li>📍 محافظات/ولايات ظفار</li>
+          <li>🛡️ مزوّدون موثّقون</li>
+          <li>💳 دفع تجريبي مبسّط</li>
+          <li>🤝 لخدمة المجتمع</li>
+        </ul>
+      </div>
+      <img src="assets/platform-3d.png" alt="منصة ظفار كير" class="about-img"/>
+    </div>
+  </section>
+
+  <section id="book" class="booking">
+    <h2>احجز خدمة</h2>
+    <form id="bookingForm" class="form">
+      <div class="row">
+        <label>الاسم الكامل
+          <input type="text" name="name" required placeholder="اسمك">
+        </label>
+        <label>رقم الهاتف (عُمان)
+          <input type="tel" name="userphone" required placeholder="+9685xxxxxxx">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>الولاية (ظفار)
+          <select name="wilayah" id="wilayah" required>
+            <option value="" disabled selected>اختر الولاية</option>
+            <option>صلالة</option>
+            <option>طاقة</option>
+            <option>مرباط</option>
+            <option>رخيوت</option>
+            <option>ضلكوت</option>
+            <option>ثمريت</option>
+            <option>المزيونة</option>
+            <option>مقشن</option>
+            <option>شليم وجزر الحلانيات</option>
+            <option>سدح</option>
+          </select>
+        </label>
+        <label>العنوان التفصيلي
+          <input type="text" name="address" required placeholder="الشارع، المعلم القريب...">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>الخدمة
+          <select name="service" required>
+            <option value="" disabled selected>اختر الخدمة</option>
+            <option>تنظيف منازل</option>
+            <option>صيانة</option>
+            <option>تجميل منزلي</option>
+            <option>خدمة خاصة</option>
+          </select>
+        </label>
+        <label>التاريخ المطلوب
+          <input type="date" name="date" id="date" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <label>ملاحظات
+          <input type="text" name="notes" placeholder="ملاحظات إضافية (اختياري)">
+        </label>
+        <label>طريقة الدفع (تجريبي)
+          <select name="pay" required>
+            <option value="" disabled selected>اختر الطريقة</option>
+            <option>بطاقة</option>
+            <option>دفع نقدي عند الوصول</option>
+          </select>
+        </label>
+      </div>
+
+      <button class="btn primary" type="submit">متابعة للدفع</button>
+      <p class="muted">عرض تجريبي — لا يتم أي حسم فعلي.</p>
+    </form>
+
+    <div id="paymentPanel" class="payment hidden">
+      <h3>أدخل بيانات البطاقة (تجريبي)</h3>
+      <form id="paymentForm" class="form">
+        <div class="row">
+          <label>اسم حامل البطاقة
+            <input type="text" name="cardname" required>
+          </label>
+          <label>رقم البطاقة
+            <input type="text" name="cardnumber" required maxlength="19" placeholder="4242 4242 4242 4242">
+          </label>
+        </div>
+        <div class="row">
+          <label>انتهاء (MM/YY)
+            <input type="text" name="exp" required maxlength="5" placeholder="12/27">
+          </label>
+          <label>الرمز CVC
+            <input type="password" name="cvc" required maxlength="4" placeholder="***">
+          </label>
+        </div>
+        <button class="btn primary" type="submit">ادفع وأكّد</button>
+        <button class="btn ghost" type="button" id="backToBooking">رجوع</button>
+        <p class="muted">تجريبي لأغراض العرض فقط.</p>
+      </form>
+    </div>
+
+    <div id="successPanel" class="success hidden">
+      <div class="bigcheck">✔</div>
+      <h3>تم استلام الحجز</h3>
+      <p>سجّلنا طلبك بنجاح. ستصلك رسالة قريبًا. للاستفسار العاجل واتساب <span class="phone"></span>.</p>
+      <a class="btn primary" href="#home" id="newBooking">حجز جديد</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>تواصل</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>دردشة سريعة 💬</h3>
+        <p>واتساب: <a class="phoneLink"><span class="phone"></span></a></p>
+        <p>الرد الآلي: <span class="hours"></span></p>
+      </div>
+      <div class="contact-card">
+        <h3>البريد 📧</h3>
+        <p><a class="emailLink"><span class="email"></span></a></p>
+        <p>نرد خلال دقائق.</p>
+      </div>
+      <div class="contact-card">
+        <h3>العنوان 📍</h3>
+        <p class="address"></p>
+        <p class="area"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="brand">
+      <img src="assets/logo.png" alt="" class="logo small"/> <strong>DhofarCare</strong>
+    </div>
+    <p>© <span id="year"></span> DhofarCare • جميع الحقوق محفوظة • ظفار، عُمان</p>
+  </footer>
+</body>
+</html>
